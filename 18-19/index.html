@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			li {
+				float: left;
+				list-style: none;
+				height: 410px;
+				position: relative;
+				width: 15px;
+				margin-right: 2px;
+			}
+			
+			.container {
+				margin: 20px auto;
+				width: 1400px;
+				height: 600px
+			}
+			
+			#playbox {
+				width: 1100px;
+				height: 410px;
+				margin: 20px auto;
+				padding-left: 200px;
+			}
+			
+			.button {
+				margin: 0 auto;
+				width: 1000px;
+				height: 40px;
+				padding-top: 10px
+			}
+			
+			#input_text {
+				width: 150px;
+				height: 30px;
+				margin-right: 20px;
+			}
+			
+			#push {
+				margin-right: 30px;
+			}
+			
+			#playbox a {
+				background: #F3506E;
+				width: 15px;
+				display: inline-block;
+				position: absolute;
+				bottom: 5px;
+			}
+			
+			#random {
+				margin-left: 20px;
+			}
+		</style>
+		<script type="text/javascript" src="second18-19.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="button">
+				<input id="input_text" type="text" autofocus="autofocus" placeholder="请输入10-100之间的数字" />
+				<button id="unshift">左侧入</button>
+				<button id="push">右侧入</button>
+				<button id="shift">左侧出</button>
+				<button id="pop">右侧出</button>
+				<button id="random">随机</button>
+				<button id="bubbleSort">冒泡</button>
+				<button id="delAll">清空</button>
+			</div>
+			<div id="playbox">
+
+			</div>
+		</div>
+	</body>
+
+</html>
