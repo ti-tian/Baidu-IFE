@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			div {
+				border: solid 3px #525151;
+				text-align: center;
+				font-size: 15px;
+			}
+			
+			#B1 {
+				display: flex;
+				display: -webkit-flex;
+				display: -moz-flex;
+				flex-direction: row;
+				align-items: center;
+				-webkit-align-items: center;
+				-webkit-align-content: center;
+				align-content: center;
+				width: calc(100%-80px);
+				height: 200px;
+				margin: 200px 40px 0 40px;
+				padding: 20px;
+				box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				border: 1px solid black;
+				font-size: 10px;
+			}
+			
+			#B1 div {
+				border: 1px solid black;
+				margin-right: 5px;
+				flex: 1 1 auto;
+				-webkit-flex: 1 1 auto;
+				height: 100%;
+				box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				display: flex;
+				display: -webkit-flex;
+				display: -moz-flex;
+				flex-direction: row;
+				align-items: center;
+				-webkit-align-items: center;
+				-webkit-align-content: center;
+				align-content: center;
+				padding: 20px;
+			}
+			
+			button {
+				width: 200px;
+				height: 50px;
+			}
+			
+			button:hover {
+				background: #EB8282;
+				border: none;
+			}
+			
+			#buttonList {
+				border: none;
+			}
+			
+			#appendText {
+				width: 200px;
+				height: 45px;
+				text-indent: 4px;
+				line-height: 45px;
+			}
+			
+			#searchText {
+				width: 200px;
+				height: 45px;
+				text-indent: 4px;
+				line-height: 45px;
+			}
+		</style>
+		<script type="text/javascript" src="second23.js"></script>
+	</head>
+
+	<body>
+
+		<div id="buttonList">
+			<button id="DFT">深度优先遍历</button>
+			<button id="SFT">广度优先遍历</button>
+			<input type="text" id="searchText" placeholder="请输入你要查询的关键字">
+			<button id="DFTS">深度优先搜索</button>
+			<button id="SFTS">广度优先搜索</button>
+			<button id="del">删除节点</button>
+			<input type="text" id="appendText">
+			<button id="apendChild">增加节点</button>
+		</div>
+		<div id="B1">Super
+			<div id="B2">Apple
+				<div id="B3">Nokia
+					<div id="B4">930</div>
+					<div id="B4">950</div>
+					<div id="B4">1020</div>
+				</div>
+				<div id="B3_1">Phone</div>
+				<div id="B3">ipad
+					<div id="B4">mini</div>
+					<div id="B4">big</div>
+				</div>
+			</div>
+			<div id="B2">lumia
+				<div id="B3">icon
+					<div id="B4">550</div>
+					<div id="B4">650</div>
+					<div id="B4">850</div>
+				</div>
+				<div id="B3">Jay
+					<div id="B4">ding</div>
+					<div id="B4">ma</div>
+					<div id="B4">qq</div>
+				</div>
+			</div>
+			<div id="B2_1">
+				pear
+			</div>
+		</div>
+	</body>
+
+</html>

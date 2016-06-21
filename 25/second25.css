@@ -1,0 +1,186 @@
+﻿* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+body {
+	background: #39465E;
+}
+
+#lineBox {
+	margin: 20px 200px 0 200px;
+	width: 800px;
+	float: left;
+}
+
+#control {
+	margin-top: 40px;
+	margin-left: 80px;
+	width: 600px;
+	border: 5px #fff solid;
+}
+
+#control_ul li {
+	border-bottom: 2px solid #C1BCBC;
+	display: none;
+}
+
+#control_ul li button:last-of-type {
+	border-right: none;
+}
+
+#control_ul button:hover {
+	background: #FC5353;
+	color: #fff
+}
+
+#control_ul span {
+	display: inline-block;
+	width: 60px;
+	height: 40px;
+	color: #fff;
+	line-height: 40px;
+	background: #F66757;
+}
+
+#control_ul li button {
+	width: 180px;
+	height: 40px;
+	border: none;
+	border-right: 2px solid #C5C1C1;
+	cursor: pointer;
+}
+
+#newPlaneBtn {
+	width: 600px;
+	height: 40px;
+	border: none;
+	background: #F93377;
+	color: #FFF;
+	cursor: pointer;
+}
+
+#newPlaneBtn:active,
+#control_ul li button:active {
+	box-shadow: 0 0 10px #f00;
+}
+
+#FirstLine {
+	width: 600px;
+	height: 600px;
+	border: 3px solid #EA4747;
+	border-radius: 50%;
+	margin: 0 auto;
+	background: #EA4747;
+}
+
+#SecondLine {
+	width: 500px;
+	height: 500px;
+	border: 3px solid #F39961;
+	border-radius: 50%;
+	margin: 50px auto;
+	background: #F39961;
+}
+
+#ThirdLine {
+	width: 400px;
+	height: 400px;
+	border: 3px solid #FA5656;
+	border-radius: 50%;
+	margin: 50px auto;
+	background: #FA5655;
+}
+
+#FourthLine {
+	width: 300px;
+	height: 300px;
+	border: 3px solid #DA2F78;
+	border-radius: 50%;
+	margin: 50px auto;
+	background: #DA2F78;
+}
+
+#FifthLine {
+	width: 200px;
+	height: 200px;
+	border: 3px solid #D8D5D5;
+	border-radius: 50%;
+	margin: 50px auto;
+	background: #D8D5D5;
+}
+
+div[id$=Line] {
+	box-sizing: border-box;
+	position: relative;
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(90deg);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+	75% {
+		transform: rotate(270deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.plane {
+	width: 80px;
+	height: 40px;
+	display: inline-block;
+	position: absolute;
+	left: 260px;
+	top: 5px;
+	transform-origin: 40px 295px;
+	border-radius: 40%;
+	animation: rotate 15s 1s linear infinite;
+	display: none;
+	animation-play-state: paused;
+	text-align: center;
+	text-indent: 5px;
+	line-height: 40px;
+	color: #000;
+	background: url(1.jpg) no-repeat left center;
+}
+
+#secondPlane {
+	transform-origin: 40px 245px;
+	left: 210px;
+}
+
+#thirdPlane {
+	transform-origin: 40px 195px;
+	left: 160px;
+}
+
+#fourthPlane {
+	transform-origin: 40px 145px;
+	left: 110px;
+}
+#consoleBox{
+	width: 500px;
+	height: 600px;
+	background: #FFFFFF;
+	float: right;
+	margin-right: 100px;
+	margin-top:100px;
+}
+#consoleText{
+	width: 400px;
+	height: 500px;
+	padding: 50px;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	color: #8E8E8E;
+	
+}
