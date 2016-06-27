@@ -1,4 +1,4 @@
-window.onload = function() {
+﻿window.onload = function() {
 	// 根据Id取元素	
 	var $ = function(id) {
 		return document.getElementById(id);
