@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>弹出层</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		header
+		{
+			width: 100%;
+			height: 50px;
+			background: #F64B4B;
+			text-align: center;
+			font-size: 30px;
+			color: #FFFFFF;
+		}
+		nav{
+			width: 100%;
+			height: 40px;
+		}
+		#showBtn{
+			width: 60px;
+			height: 40px;
+			display: block;
+			margin: 0 auto;
+		}
+		article{
+			width: 100%;
+			height: 2000px;
+			background: #3ADDE6;
+			font-size: 100px;
+			color: #FFFFFF;
+			text-align: center;
+		}
+		#emersionbox{
+			width: 1000px;
+			height: 500px;
+			background: #FAF8F7;
+			position: fixed;
+			z-index: 3;
+			display: block;
+		}
+		#em_nav{
+			width: 100%;
+			height: 80px;
+			background: #807A7A;
+			font-size: 46px;
+			color: #FFFFFF;
+			cursor:move;
+		}
+		#closeBtn{
+			width: 60px;
+			height: 60px;
+			font-size: 50px;
+			line-height: 50px;
+			display: block;
+			float: right;
+			margin: 10px;
+		}
+		#mask{
+			background: #000;
+			opacity: 0.55;
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: 2;
+		}
+	</style>
+	<script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+	<header>这是头文件</header>
+	<nav><button id="showBtn">弹出</button></nav>
+	<article>这是一个内容块</article>
+</body>
+</html>
