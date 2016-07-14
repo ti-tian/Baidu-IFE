@@ -1,0 +1,40 @@
+.table {
+    border: solid 1px #000000;
+}
+
+.tr {
+    background: #E6E6E6;
+    text-align: center;
+}
+.th{
+    background: #8E8E8E;
+    border-bottom: 1px solid #000;
+    width: 80px;
+    padding: 40px;
+}
+.td{
+	 padding: 20px;
+}
+.as {
+    margin: 1px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 10px solid #fff;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-bottom: 0px solid transparent;
+    cursor: pointer;
+}
+
+.ds {
+     margin: 1px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid #fff;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top: 0px solid transparent;
+    cursor: pointer;
+}

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>UI组件之排序表格</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="sort-table.css" />
+</head>	
+
+<body>
+	<p>提供接口：自定义表格数据，和支持排序的列 </p>
+    <script type="text/javascript" src='sort-table.js'></script>
+    <script type="text/javascript">
+    var newsort = new sortTable();
+    var data = [
+        ['姓名', '语文', '英语', '数学'],
+        ['小明', '85', '55', '78'],
+        ['小红', '85', '25', '85'],
+        ['小刚', '42', '75', '42'],
+        ['小李', '47', '51', '48'],
+        ['小丽', '46', '54', '98'],
+    ];
+    sortlist = ['1', '2', '3']
+    newsort.showTable(data, sortlist);
+    </script>
+</body>
+
+</html>
