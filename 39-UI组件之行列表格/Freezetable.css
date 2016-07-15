@@ -1,0 +1,25 @@
+p{
+    margin: 40px;
+}
+*{
+    margin: 0;
+    padding: 0
+}
+.tr {
+    background: #E6E6E6;
+    text-align: center;
+}
+
+.th {
+    background: #8E8E8E;
+    border-bottom: 1px solid #000;
+    width: 80px;
+    padding: 40px;
+    z-index: 999
+}
+
+.td {
+    padding: 40px;
+    width: 80px;
+    border-bottom: 1px solid #000;
+}
